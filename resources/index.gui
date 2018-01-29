@@ -1,0 +1,108 @@
+<svg class="background">
+  <!--Loading-->
+  <svg class="screen active" id="loadingScreen">
+    <text id="loadingMsg" fill="fb-peach" text-anchor="middle" x="50%" y="20%" text-length="20">Loading...</text>
+    <image id="loadingCloud" x="50% -60" y="50% -60" href="images/cloud.png" width='120' height='120'/>
+    <image id="loadingSadCloud" class="hidden" x="50% -62" y="50% -62" href="images/sadcloud.png" width='124' height='124'/>
+    <g id="loadingSpinner" transform="translate(50%,50%)">
+      <animateTransform attributeType="rotate" from="0" to="360" begin="load" dur="3" repeatCount="indefinite" /> 
+      <arc x="-30" y="-30" width="60" height="60" fill="black" arc-width="7" start-angle="0" sweep-angle="90" />
+    </g>  
+  </svg>
+
+  <!--Menu-->
+  <svg class="screen hidden" id="menuScreen"> 
+    <text id="date" text-length="20"></text>
+    <use id="btnTrivia" href="#square-button-icon" y="40%" fill="fb-peach">
+      <set href="#text" attributeName="text-buffer" to="Trivia" />
+      <set href="#image" attributeName="href" to="images/q.png" />
+    </use>    
+    <use id="btnBirthday" href="#square-button-icon" y="70%" fill="fb-magenta">
+      <set href="#text" attributeName="text-buffer" to="Birthdays" />
+      <set href="#image" attributeName="href" to="images/cake.png" />
+    </use>
+  </svg>
+
+  <!--Trivia-->
+  <svg class="screen hidden" id="triviaScreen">
+    <use href="#scrollview">
+       <use class="trivia-item" id="trivia-1" href="#scrollview-item">
+        <use href="#mixed-text-left-top" height="99%" fill="fb-peach">
+          <set href="#header/text" attributeName="text-length" to="25"/>
+          <set href="#copy/text" attributeName="text-length" to="350"/>
+        </use>        
+        <line x1="0" y1="99%" x2="100%" y2="99%" fill="fb-peach" stroke-width="1" />        
+      </use>          
+       <use class="trivia-item" id="trivia-2" href="#scrollview-item">
+        <use href="#mixed-text-left-top" height="99%" fill="fb-peach">
+          <set href="#header/text" attributeName="text-length" to="25"/>
+          <set href="#copy/text" attributeName="text-length" to="350"/>
+        </use>        
+        <line x1="0" y1="99%" x2="100%" y2="99%" fill="fb-peach" stroke-width="1" />        
+      </use>        
+       <use class="trivia-item" id="trivia-3" href="#scrollview-item">
+        <use href="#mixed-text-left-top" height="99%" fill="fb-peach">
+          <set href="#header/text" attributeName="text-length" to="25"/>
+          <set href="#copy/text" attributeName="text-length" to="350"/>
+        </use>        
+        <line x1="0" y1="99%" x2="100%" y2="99%" fill="fb-peach" stroke-width="1" />        
+      </use>      
+       <use class="trivia-item" id="trivia-4" href="#scrollview-item">
+        <use href="#mixed-text-left-top" height="99%" fill="fb-peach">
+          <set href="#header/text" attributeName="text-length" to="25"/>
+          <set href="#copy/text" attributeName="text-length" to="350"/>
+        </use>        
+        <line x1="0" y1="99%" x2="100%" y2="99%" fill="fb-peach" stroke-width="1" />        
+      </use>        
+       <use class="trivia-item" id="trivia-5" href="#scrollview-item">
+        <use href="#mixed-text-left-top" height="99%" fill="fb-peach">
+          <set href="#header/text" attributeName="text-length" to="25"/>
+          <set href="#copy/text" attributeName="text-length" to="350"/>
+        </use>        
+        <line x1="0" y1="99%" x2="100%" y2="99%" fill="fb-peach" stroke-width="1" />        
+      </use>           
+    </use>
+  </svg>
+  
+  <!--Birthday-->
+  <svg class="screen hidden" id="birthdayScreen">
+    <use href="#scrollview">
+      <use class="birthday-item" href="#scrollview-item">
+        <use href="#mixed-text-left-top" height="99%" fill="fb-magenta">
+          <set href="#header/text" attributeName="text-length" to="25"/>
+          <set href="#copy/text" attributeName="text-length" to="350"/>
+        </use>        
+        <line x1="0" y1="99%" x2="100%" y2="99%" fill="fb-magenta" stroke-width="1" />        
+      </use>     
+      <use class="birthday-item" href="#scrollview-item">
+        <use href="#mixed-text-left-top" height="99%" fill="fb-magenta">
+          <set href="#header/text" attributeName="text-length" to="25"/>
+          <set href="#copy/text" attributeName="text-length" to="350"/>
+        </use>        
+        <line x1="0" y1="99%" x2="100%" y2="99%" fill="fb-magenta" stroke-width="1" />        
+      </use>    
+       <use class="birthday-item" href="#scrollview-item">
+        <use href="#mixed-text-left-top" height="99%" fill="fb-magenta">
+          <set href="#header/text" attributeName="text-length" to="25"/>
+          <set href="#copy/text" attributeName="text-length" to="350"/>
+        </use>        
+        <line x1="0" y1="99%" x2="100%" y2="99%" fill="fb-magenta" stroke-width="1" />        
+      </use>
+       <use class="birthday-item" href="#scrollview-item">
+        <use href="#mixed-text-left-top" height="99%" fill="fb-magenta">
+          <set href="#header/text" attributeName="text-length" to="25"/>
+          <set href="#copy/text" attributeName="text-length" to="350"/>
+        </use>        
+        <line x1="0" y1="99%" x2="100%" y2="99%" fill="fb-magenta" stroke-width="1" />        
+      </use>    
+       <use class="birthday-item" href="#scrollview-item">
+        <use href="#mixed-text-left-top" height="99%" fill="fb-magenta">
+          <set href="#header/text" attributeName="text-length" to="25"/>
+          <set href="#copy/text" attributeName="text-length" to="350"/>
+        </use>        
+        <line x1="0" y1="99%" x2="100%" y2="99%" fill="fb-magenta" stroke-width="1" />        
+      </use>          
+    </use>
+  </svg>
+</svg>
+

@@ -1,0 +1,17 @@
+{
+  "fitbit": {
+    "appUUID": "ad05353d-54d3-45e2-a969-8a63f9b0df3f",
+    "appType": "app",
+    "appDisplayName": "Daily Trivia",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#ffc107",
+    "requestedPermissions": [
+      "access_internet"
+    ],
+    "i18n": {
+      "en": {
+        "name": "Daily Trivia"
+      }
+    }
+  }
+}

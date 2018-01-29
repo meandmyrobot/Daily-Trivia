@@ -1,0 +1,24 @@
+text{
+  font-family: System-Regular;
+  font-weight: bold;
+  text-anchor: middle;
+  fill: white;
+}
+
+.background {
+  viewport-fill: fb-black;
+}
+
+.active {
+  display: inline;
+}
+
+.hidden {
+  display: none;
+}
+
+#date{
+  font-size: 60;
+  x:50%;
+  y:70;
+}
